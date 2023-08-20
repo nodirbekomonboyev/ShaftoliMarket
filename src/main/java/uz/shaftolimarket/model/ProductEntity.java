@@ -1,26 +1,25 @@
 package uz.shaftolimarket.model;
 
-
 import jakarta.persistence.*;
 import lombok.*;
 import java.util.UUID;
 
 @Entity
-@Table(name = "users")
+@Table(name = "product")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 @Builder
-public class UserEntity {
+public class ProductEntity {
     @Id
     @GeneratedValue
     private UUID id;
     private String name;
     @Column(unique = true)
-    private String email;
-    private String password;
-    private Boolean verified;
-    private UserRole role;
-
+    private String model;
+    private Double price;
+    private ProductCategory category;
+    private String color;
+    private String avatar;
 }
