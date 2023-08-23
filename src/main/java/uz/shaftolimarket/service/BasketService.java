@@ -6,8 +6,6 @@ import uz.shaftolimarket.model.BasketEntity;
 import uz.shaftolimarket.model.UserEntity;
 import uz.shaftolimarket.model.UserRole;
 import uz.shaftolimarket.repository.BasketRepository;
-import uz.shaftolimarket.repository.UserRepository;
-
 import java.util.UUID;
 
 @Service
