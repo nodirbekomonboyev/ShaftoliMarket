@@ -11,6 +11,7 @@ import uz.shaftolimarket.repository.UserRepository;
 
 import java.util.Optional;
 
+import static uz.shaftolimarket.model.UserRole.ADMIN;
 import static uz.shaftolimarket.model.UserRole.USER;
 
 @Service
