@@ -20,9 +20,10 @@ public class AuthController {
 
     @PostMapping("/verification")
     public ResponseEntity<String> verification(
+            @RequestParam String email,
             @RequestParam String code
     ) {
-        userService.verifyByEmail(code);
+        userService.verifyByEmail(email, code);
         return ResponseEntity.ok("xali davmi bor");
     }
 }
